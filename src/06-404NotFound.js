@@ -1,16 +1,6 @@
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
-
-function useQuery() {
-	return new URLSearchParams(useLocation().search);
-}
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
-	const query = useQuery();
-
-	const pig = query.get('pig');
-	const name = query.get('name');
-	console.log({ pig, name });
-
 	return (
 		<div>
 			<nav>

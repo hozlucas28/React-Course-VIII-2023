@@ -1,15 +1,19 @@
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
-
-function useQuery() {
-	return new URLSearchParams(useLocation().search);
-}
+import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 
 function App() {
-	const query = useQuery();
+	const navigate = useNavigate();
 
-	const pig = query.get('pig');
-	const name = query.get('name');
-	console.log({ pig, name });
+	const forward = () => {
+		navigate(1);
+	};
+
+	const back = () => {
+		navigate(-1);
+	};
+
+	const push = (url) => {
+		navigate(url);
+	};
 
 	return (
 		<div>
@@ -22,6 +26,10 @@ function App() {
 						<Link to="/profile">Perfil</Link>
 					</li>
 				</ul>
+
+				<button onClick={back}>Back</button>
+				<button onClick={forward}>Forward</button>
+				<button onClick={() => push('/cerdo-feliz')}>Push</button>
 			</nav>
 
 			<Routes>
@@ -36,7 +44,7 @@ function App() {
 				<Route
 					path="*"
 					element={<h1>404: No encontrada</h1>}
-				></Route>
+				/>
 			</Routes>
 		</div>
 	);

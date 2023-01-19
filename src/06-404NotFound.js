@@ -1,3 +1,9 @@
+/* --------------------------------------------------------------------------
+ * APUNTES:
+ * 		   En este archivo demuestro como crear una ruta en caso de un
+ * 		   error 404.
+-------------------------------------------------------------------------- */
+
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {

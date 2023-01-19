@@ -1,3 +1,13 @@
+/* --------------------------------------------------------------------------
+ * IMPORTANTE:
+ *  			  - <Link> = Se comporta como una etiqueta <a>.
+ *  			  - <Routes> = Agrupa las rutas.
+ *  			  - <Route> = Define una nueva ruta.
+ *  			  - <path> = Defina la ruta para acceder al elemento.
+ *  			  - <element> = Define el elemento a renderizar cuando se
+ * 								accede a la ruta (<path>).
+-------------------------------------------------------------------------- */
+
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {

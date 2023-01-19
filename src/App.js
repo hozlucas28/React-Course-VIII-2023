@@ -1,3 +1,9 @@
+/* --------------------------------------------------------------------------
+ * APUNTES:
+ * 		   En este archivo demuestro como obtener consultas específicas de
+ * 		   la URL.
+-------------------------------------------------------------------------- */
+
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 
 function useQuery() {

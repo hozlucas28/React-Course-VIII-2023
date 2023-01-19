@@ -1,3 +1,9 @@
+/* --------------------------------------------------------------------------
+ * IMPORTANTE:
+ *  			  - <Navigate> =  Me permite redirigir al usuario a una ruta
+ * 								  especifica.
+-------------------------------------------------------------------------- */
+
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 
 const Portfolio = () => {

@@ -1,3 +1,9 @@
+/* --------------------------------------------------------------------------
+ * APUNTES:
+ * 		   En este archivo se muestra un ejemplo de rutas anidadas, es decir,
+ * 		   rutas dentro de rutas.
+-------------------------------------------------------------------------- */
+
 import { Routes, Route, Link } from 'react-router-dom';
 
 const Portfolio = () => {

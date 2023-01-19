@@ -1,3 +1,9 @@
+/* --------------------------------------------------------------------------
+ * IMPORTANTE:
+ *  			  - <useNavigate> = Me permite acceder al historial de
+ * 									navegación o redirigir al usuario.
+-------------------------------------------------------------------------- */
+
 import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 
 function App() {
